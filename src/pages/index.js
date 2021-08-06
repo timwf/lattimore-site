@@ -15,7 +15,7 @@ const Home = ({ data, location } ) => {
   const html = document.querySelector('html')
 
   useEffect(() => {
-    html.style.overflow = 'hidden'
+    // html.style.overflow = 'hidden'
 
     setTimeout(function(){ 
       let animateUp = document.getElementsByClassName('animateUp')  
@@ -26,7 +26,7 @@ const Home = ({ data, location } ) => {
       TweenLite.to(animateLeft, 0.4, {x: 0, y: 0, opacity: 1})
       TweenLite.to(animateDown, 0.4, {x: 0, y: 0, opacity: 1})
       TweenLite.to(animateRight, 0.4, {x: 0, y: 0, opacity: 1})
-      html.style.overflow = 'auto'
+      // html.style.overflow = 'auto'
     }, 300); 
   }, [])
 
