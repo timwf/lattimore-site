@@ -7,6 +7,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-svg`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,0 +1,200 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+  cursor: none !important; 
+  text-decoration: none;
+  color: black;
+}
+
+body{
+  overflow: hidden;
+  cursor: none !important;
+  background-color: #F1F1F1;
+}
+
+.mouse-cursor{
+  display: none;
+
+  @media (min-width: 1025px){
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    pointer-events: none;
+    transition: transform 0.4s;
+    opacity: 0;
+  }
+
+  &.active{
+    transform: rotate(135deg);
+
+    & path{
+      fill: green;
+    }
+  }
+
+  &.left-active{
+    transform: rotate(-45deg);
+
+    & path{
+      fill: green;
+    }
+  }
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: 768px){
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  @media (min-width: 1024px){
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+}
+
+.page-wrap{
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+//typography
+
+.header-upper-large{
+  font-family: 'gt-flexa-medium'; 
+  font-size: 25px;  
+  line-height: 30px;
+
+
+  @media (min-width: 768px){
+    font-size: 50px;  
+    line-height: 60px;
+  }
+
+  @media (min-width: 1024px){
+    font-size: 70px;  
+    line-height: 80 px;
+  }
+}
+
+.quote{
+  font-family: 'gt-flexa-mono-italic'; 
+  font-size: 25px;  
+  line-height: 30px;
+
+
+  @media (min-width: 768px){
+    font-size: 50px;  
+    line-height: 60px;
+  }
+
+  @media (min-width: 1024px){
+    font-size: 70px;  
+    line-height: 80 px;
+  }
+}
+
+.menu-font{
+  font-family: 'gt-flexa-mono'; 
+  font-size: 20px;  
+  line-height: 24 px;
+
+
+  @media (min-width: 768px){
+    font-size: 40px;  
+    line-height: 5 0px;
+  }
+}
+
+.animateUp{
+  transform: translateY(10%);  
+  opacity: 0;
+}
+
+.animateDown{
+  transform: translateY(-20%);  
+  opacity: 0;
+}
+
+.animateLeft{
+  transform: translateX(20%);  
+  opacity: 0;
+}
+
+.animateRight{
+  transform: translateX(-20%);  
+  opacity: 0;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+
+
+
+@font-face {
+  font-family: 'gt-flexa-medium';
+  src: url('../../fonts/GT-Flexa-Extended-Medium-Trial.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'gt-flexa-mono';
+  src: url('../../fonts/GT-Flexa-Mono-Regular-Trial.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'gt-flexa-mono-italic';
+  src: url('../../fonts/GT-Flexa-Mono-Regular-Italic-Trial.woff2') format('woff2');
+}
