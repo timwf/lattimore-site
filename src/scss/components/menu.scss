@@ -112,7 +112,7 @@
   &__inner{
     padding: 36px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
@@ -140,6 +140,7 @@
 
   &__left{
     padding-bottom: 123px;
+    order: 1;
 
     @media (min-width: 768px){
       width: 70%;
@@ -183,12 +184,14 @@
   }
 
   &__right{
+    order: -1;
 
     @media (min-width: 768px){
       margin-top: 50px;
     }
 
     @media (min-width: 1024px){  
+      order: 0;
         margin-right: 4%;
         margin-top: -195px;
         overflow: auto;
