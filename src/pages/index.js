@@ -12,7 +12,7 @@ import "../scss/layout/home.scss"
 
 const Home = ({ data, location } ) => {
 
-  const html = document.querySelector('html')
+  // const html = document.querySelector('html')
 
   useEffect(() => {
     // html.style.overflow = 'hidden'
