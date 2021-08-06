@@ -9,7 +9,7 @@ import "../scss/base/base.scss"
 import "../scss/components/header.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location="", title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
