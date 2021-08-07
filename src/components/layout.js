@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 
 import Menu from "../components/menu"
-import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft } from '../utils/helpers.js'
+import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft,  getActualViewheight } from '../utils/helpers.js'
 import Plus from "../images/plus.svg"
 import "../scss/base/base.scss"
 import "../scss/components/header.scss"
@@ -16,6 +16,8 @@ const Layout = ({ location="", title, children }) => {
   let pageWrap = false 
 
   useEffect(() => {
+
+    getActualViewheight()
 
     // checkIfTouch()
     if (('ontouchstart' in window) ||

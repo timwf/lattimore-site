@@ -60,7 +60,7 @@ const Menu = () => {
             imgStyle={{ height: "auto", border: "solid black" }}
             alt="home-image"
           />
-          <p>We’re happy to be as white-labelled as you need.</p>
+          <p className="body">We’re happy to be as white-labelled as you need.</p>
         
         </div>
         <div className="menu__right">

@@ -47,37 +47,31 @@ const Home = ({ data, location } ) => {
     <div className="container home">
       <div className="home__header" >
 
-        <Link to="/" className="menu__logo" onClick={e => closeMenu(e)} onMouseEnter={e => handleMouseHoverLeft(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>
+        <Link to="/" className="menu__logo" onClick={e => openMenu(e)} onMouseEnter={e => handleMouseHoverLeft(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>
           <h1 >Lattimore</h1>
           <h1 >Friends</h1>
-          <Plus />
+          <Plus /> 
         </Link> 
-
-
+        
         <Plus 
           className="home-plus-left"
           onMouseEnter={e => handleMouseHoverLeft(e)}
           onMouseLeave={e =>handleMouseHoverExit(e)}
-          onClick={e => openMenu()}  
-        
+          onClick={e => openMenu()}          
         />
         <Plus 
           className="home-plus-right"
           onMouseEnter={e => handleMouseHoverRight(e)}
           onMouseLeave={e =>handleMouseHoverExit(e)}
-          onClick={e => openMenu()}  
-        
+          onClick={e => openMenu()}          
         />
       </div>
 
       <div className="home__inner">
       <div className="animateUp">
         <h2 className="home__lattimore">Lattimore</h2>
-        </div>
-        
-        <h2 className="animateLeft">Friends</h2>
-     
-      
+        </div>        
+        <h2 className="animateLeft">Friends</h2>      
         <StaticImage      
           formats={["AUTO", "WEBP", "AVIF"]}
           src="../images/home-hero.png"    
@@ -85,13 +79,11 @@ const Home = ({ data, location } ) => {
           style={{ height: "100%", width: "100%" }}
           imgStyle={{ border: "solid black" }}
           alt="Profile picture"
-        />
-        
+        />        
         <h2 className="animateRight">the agencies'</h2>
         <div className="animateDown">
           <h2 className="home__web-agency">web agency</h2>
-        </div>
-        
+        </div>        
       </div>
       <h3>the agencies' web agancy</h3>
     </div>

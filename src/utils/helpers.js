@@ -11,10 +11,15 @@ export const handleMouseHoverRight = (e) => {
 }
 
 
-// export const checkIfTouch = () => {
-//   var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
-//   console.log(supportsTouch)
-// }
+export const getActualViewheight = () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  window.addEventListener('resize', () => { 
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+}
 
 
 //hoverstate - exit
