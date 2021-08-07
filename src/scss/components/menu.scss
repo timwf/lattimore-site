@@ -119,14 +119,24 @@
     height: 100%;
     -ms-overflow-style: none; 
     scrollbar-width: none;
+    height: calc(var(--vh, 1vh) * 100 - 98px);
 
     &::-webkit-scrollbar{
       display: none;
     }
 
+
+
+
+
+
+
+
+
     @media (min-width: 768px) and (min-height: 500px){
       padding: 43px;    
       padding-top: 0px;
+      height: calc(var(--vh, 1vh) * 100 - 155px);
     }
 
     @media (min-width: 1024px){  
@@ -137,6 +147,7 @@
 
     @media (min-width: 1400px){ 
       padding: 91px;
+      height: 100%;
     }
   }
 
