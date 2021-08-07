@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Layout from "../components/layout"
 import Plus from "../images/plus.svg"
 import { StaticImage } from "gatsby-plugin-image"
-//import "../index.scss"
 import { Link } from "gatsby"
 import { TweenLite } from "gsap";
 
