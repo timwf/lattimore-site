@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from "../components/layout"
 import "../scss/layout/what-we-do.scss"
 import { accordionData } from '../utils/content';
 import GreenArrow from "../images/green-arrow.svg"
 import AccordianItem from "../components/accordian-item"
+import PageHeading from "../components/page-heading"
 
 
 
@@ -11,15 +12,11 @@ const WhatWeDo = ({ data, location }) => {
 
   return (
     <Layout location={location}  className="container">
-      <div className="what-we-do">
-        <h1 className="header-std">Services</h1>
-          <div className="what-we-do__inner">
-            
-
-          
+      <PageHeading title="Services" />
+      <div className="what-we-do">  
+          <div className="what-we-do__inner">          
             <div className="what-we-do__left">
-              <div className="what-we-do__left-wrap">
-                
+              <div className="what-we-do__left-wrap">                
               {accordionData.map(({ title, tape, content }, key) => (         
                 <AccordianItem title={title} tape={tape} content={content} id={key} />           
               ))}

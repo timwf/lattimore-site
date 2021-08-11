@@ -35,12 +35,6 @@ const Home = ({ data, location } ) => {
     menu[0].classList.add('active')
   }
 
-  function closeMenu(){
-    var menu = document.getElementsByClassName('menu')  
-    menu[0].classList.remove('active')
-  }
-
-
   return (
     <Layout location={location}  className="container">
     <div className="container home">

@@ -1,0 +1,37 @@
+.what-weve-done-carousel{
+
+  &__inner{
+    margin-left: -40px;
+    width: calc(100% + 80px);
+    margin-top: 77px;
+  }
+
+  .carousel{
+    margin-bottom: 26px;
+  }
+
+  .swiper-wrapper{
+    transition-timing-function: linear;
+  }
+
+  &__top{
+    position: relative;
+  }
+
+  &__left-arrow{
+    height: 100%;
+    width: 100px;
+    background-color: transparent;
+    z-index: 99;
+    position: absolute;
+  }
+
+  &__right-arrow{
+    height: 100%;
+    width: 100px;
+    right: 0;
+    background-color: transparent;
+    z-index: 99;
+    position: absolute;
+  }
+}

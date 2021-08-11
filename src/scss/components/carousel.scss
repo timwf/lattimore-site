@@ -1,0 +1,59 @@
+.carousel{
+
+  &__slide{    
+    height: 21.5vw;
+    width: 100%;
+    border: solid black;
+  }
+
+  &__slide-header{
+    height: 10%;
+    border-bottom: solid black;
+    border-width: 1px;
+    display: flex;
+    position: relative;
+    align-items: center;    
+  }
+
+  &__slide-header-dot{
+    height: 14px;
+    width: 14px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: solid black;
+    border-width: 2px;
+
+    &:first-of-type{
+      background-color:#DC25FD;
+      margin-left: 20px;
+    }
+
+    &:last-of-type{
+      background-color:#22D33C;
+    }
+  }
+
+  &__slide-inner{
+    position: relative;
+    height: 90%;
+
+    &:hover{
+      img{
+        display: none;
+      }
+    }
+
+    img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    
+    video{
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
