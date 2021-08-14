@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 
 import Menu from "../components/menu"
-import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft,  getActualViewheight } from '../utils/helpers.js'
+import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft,  getActualViewheight, disableScroll, enableScroll } from '../utils/helpers.js'
 import Plus from "../images/plus.svg"
 import "../scss/base/base.scss"
 import "../scss/components/header.scss"
@@ -16,6 +16,8 @@ const Layout = ({ location="", title, children }) => {
   let pageWrap = false 
 
   useEffect(() => {
+
+    enableScroll()
 
     getActualViewheight()
 
@@ -53,6 +55,7 @@ const Layout = ({ location="", title, children }) => {
   function openMenu(){
     var menu = document.getElementsByClassName('menu')  
     menu[0].classList.add('active')
+    disableScroll()
   }
 
 

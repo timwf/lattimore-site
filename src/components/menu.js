@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 import "../scss/components/menu.scss"
-import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft } from '../utils/helpers.js'
+import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft, enableScroll } from '../utils/helpers.js'
 import Minus from "../images/minus.svg"
 import Plus from "../images/plus.svg"
 
@@ -14,6 +14,7 @@ const Menu = () => {
   function closeMenu(){
     var menu = document.getElementsByClassName('menu')  
     menu[0].classList.remove('active')
+    enableScroll()
   }
 
 

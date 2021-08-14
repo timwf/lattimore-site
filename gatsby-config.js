@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-transition-link`,
+    `gatsby-transformer-ffmpeg`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

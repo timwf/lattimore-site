@@ -48,6 +48,33 @@ a{
   color: black;
 }
 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.disabled::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
 body{
   overflow-x: hidden;
   cursor: none !important;
@@ -186,7 +213,7 @@ body{
   }
 
   @media (min-width: 1024px){
-    font-size: 60px;  
+    font-size: 50px;  
     line-height: 60px;
   }
 }

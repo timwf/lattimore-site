@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^3.10.2",
+    "gatsby-plugin-ffmpeg": "^0.3.1",
     "gatsby-plugin-gatsby-cloud": "^2.10.1",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-layout": "^2.11.0",
@@ -17,7 +18,9 @@
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-transformer-ffmpeg": "^0.3.3",
     "gatsby-transformer-sharp": "^3.10.0",
+    "gatsby-video": "^0.2.0",
     "gsap": "^3.7.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

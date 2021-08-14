@@ -1,13 +1,38 @@
 .what-weve-done-carousel{
 
   &__inner{
-    margin-left: -40px;
-    width: calc(100% + 80px);
-    margin-top: 77px;
+    margin-left: -16px;
+    width: calc(100% + 32px);
+    margin-top: 65px;
+
+    @media (min-width: 768px){
+      margin-left: -27px;
+      width: calc(100% + 54px);
+      margin-top: 77px;
+    }
+
+    @media (min-width: 1024px){
+      margin-left: -40px;
+      width: calc(100% + 80px);
+      margin-top: 77px;
+    }
   }
 
   .carousel{
-    margin-bottom: 26px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (min-width: 768px){
+      margin-bottom: 26px;
+    }
+  }
+
+  .swiper-container{
+    padding-left: 16px;
+
+    @media (min-width: 768px){
+      padding-left: 40px;
+    }
   }
 
   .swiper-wrapper{
@@ -22,7 +47,7 @@
     height: 100%;
     width: 100px;
     background-color: transparent;
-    z-index: 99;
+    z-index: 7;
     position: absolute;
   }
 
@@ -31,7 +56,7 @@
     width: 100px;
     right: 0;
     background-color: transparent;
-    z-index: 99;
+    z-index: 7;
     position: absolute;
   }
 }
