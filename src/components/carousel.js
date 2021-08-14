@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react';
+import React, {  useEffect } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -17,27 +17,30 @@ SwiperCore.use([Autoplay, Navigation]);
 
 
 const Carousel = ({ reverse, navClass, slideClicked, handleSlideClicked }) => {
+
   const isBrowser = typeof window !== 'undefined'
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : 0)
+
   let right = "." + navClass + "-right"
   let left = "." + navClass + "-left"
+
   let numSlides = 2.7
   let spaceBetween = 27
 
-  if (window.innerWidth < 768) {
-    numSlides = 1.15
-    spaceBetween = 20
-  } 
+  if(typeof window !== undefined){
+    if (window.innerWidth < 768) {
+      numSlides = 1.15
+      spaceBetween = 20
+    } 
+   }
+
+
+
 
   useEffect(() => {
     setWidth(window.innerWidth);
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth);
-
-      if (window.innerWidth < 768) {
-        numSlides = 1.15
-        spaceBetween = 20
-      } 
     });
     return () => {
       window.removeEventListener("resize", () => {});

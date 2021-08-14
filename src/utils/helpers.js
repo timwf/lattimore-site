@@ -37,7 +37,7 @@ export const disableScroll = () => {
 // call this to Enable
 export const enableScroll = () => {
   window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('wheel', preventDefault, wheelOpt); 
   window.removeEventListener('touchmove', preventDefault, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
   document.body.classList.remove("disabled");
