@@ -13,6 +13,10 @@
     .header-std{
       max-width: 70%;
       margin-top: 77px;
+
+      @media (min-width: 1180px){
+        max-width: 77%;
+      }
   
       svg{
         width: 14px;
@@ -21,19 +25,16 @@
         margin-left: -1px;
         top: 2px;
         position: relative;
+
+        @media (min-width: 1024px){
+
+        }   
+    
+        @media (min-width: 1180px){
+          width: 32px;
+          height: 35px;
+        }
       }
-
-      @media (min-width: 1024px){
-
-      }
-  
-  
-      @media (min-width: 1180px){
-        width: 32px;
-        height: 35px;
-      }
-
-
     }
   }
 
