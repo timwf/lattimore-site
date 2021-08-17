@@ -7,12 +7,14 @@ import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft,  getA
 import Plus from "../images/plus.svg"
 import "../scss/base/base.scss"
 import "../scss/components/header.scss"
+import "../scss/components/footer.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Layout = ({ location="", title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
+  let footer
   let pageWrap = false 
 
   useEffect(() => {
@@ -64,6 +66,10 @@ const Layout = ({ location="", title, children }) => {
     header = (
       <div></div>
     )
+
+    footer = (
+      <div></div>
+    )
   } else {
     pageWrap = true
     header = (
@@ -86,6 +92,52 @@ const Layout = ({ location="", title, children }) => {
         </div>        
       </div>
     )
+    footer = (
+      <div className="footer container">
+        <div className="footer-desktop">
+          <div className="footer-desktop__col-one">
+            <h4 >2021 c hewoco ltd. <a onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>Legal area.</a></h4>
+          </div>
+          <div className="footer-desktop__col-two">
+          <AniLink cover bg="#f1f1f1" duration={1}  to="/" className="header__logo" onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>
+            <h2>Lattimore</h2>
+            <Plus />
+            <h2>Friends</h2>
+          </AniLink>   
+          </div>
+          <div className="footer-desktop__col-three">
+            <h4 onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>Awwwards</h4>
+            <h4 onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>Instagram</h4>
+            <h4 onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>LinkedIn</h4>
+          </div>
+        </div>
+
+        <div className="footer-mobile ">
+          <div className="footer-mobile__col-one ">
+            <AniLink  bg="#f1f1f1" duration={1} to="/"  >
+              <div className="menu__logo"  onMouseEnter={e => handleMouseHoverLeft(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>
+              <h1>Lattimore</h1>
+              <h1>Friends</h1>
+              <Plus />
+              </div>
+            </AniLink>
+
+            <h4 >2021 c hewoco ltd. <a onMouseEnter={e => handleMouseHoverRight(e)} onMouseLeave={e =>handleMouseHoverExit(e)}>Legal area.</a></h4>
+          </div>
+          <div className="footer-mobile__col-two ">
+            <h4>Awwwards</h4>
+            <h4>Instagram</h4>
+            <h4>LinkedIn</h4>
+          </div>
+
+
+
+        </div>
+
+
+         
+      </div>
+    )
   }
 
   return (
@@ -93,6 +145,7 @@ const Layout = ({ location="", title, children }) => {
      
       <div className="mouse-cursor">
         <p className="cursor-caption"></p>
+        
       <svg      
      
         width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,6 +156,7 @@ const Layout = ({ location="", title, children }) => {
       <Menu ></Menu>
       <header className="global-header">{header}</header>
       <main className={`banner ${pageWrap ? "page-wrap container" : ""}`}>{children}</main>
+      <footer className="global-footer">{footer}</footer>
     </div>
   )
 }

@@ -83,6 +83,9 @@ export const handleMouseHoverLeft = (e) => {
 //hoverstate - point right
 export const handleMouseHoverRight = (e, tape) => {
 
+  
+
+
   if (tape) {
     let cursorText = document.getElementsByClassName('cursor-caption')  
     cursorText[0].classList.add('active')   

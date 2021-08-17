@@ -3,42 +3,26 @@ import 'swiper/swiper.scss';
 import SwiperCore, { Autoplay, Navigation } from 'swiper';
 import "../scss/components/carousel.scss"
 import { disableScroll, enableScroll } from '../utils/helpers.js'
-
-
 SwiperCore.use([Autoplay, Navigation]);
-
 
 const Slide = ({ img, video, handleSlideClicked }) => {
 
-  let thisVideo = video
-
   function slideClick(e, video){
-
     handleSlideClicked(video)
-
-        console.log('click handeled');
-    console.log('clicked');
     let lightbox = document.getElementsByClassName('carousel__lightbox')  
     let lightvideo = document.getElementsByClassName('carousel__lightbox-video')  
     let lightvideoWrap = document.getElementsByClassName('carousel__lightbox-video-wrap')  
     lightbox[0].classList.add('active')
     lightvideo[0].src = video;
-    console.log(video);
     lightvideoWrap[0].play()
-    disableScroll()
- 
+    disableScroll() 
 
-    lightbox[0].addEventListener('click', function (event) {    
-
+    lightbox[0].addEventListener('click', function (event) { 
       lightbox[0].classList.remove('active') 
       lightvideoWrap[0].pause()
       lightvideoWrap[0].currentTime = 0
       enableScroll()
-    }, false);
-
-
-
-    
+    }, false);    
   }
 
 
@@ -63,10 +47,9 @@ const Slide = ({ img, video, handleSlideClicked }) => {
         <div className="carousel__slide-header-dot"></div>            
       </div>
       <div className="carousel__slide-inner">
-        <video loop  muted
+        <video loop  muted poster={img}
           onMouseOver={e => videoMouseOver(e)} 
-          onMouseOut={e => videoMouseOut(e)}       
-        >
+          onMouseOut={e => videoMouseOut(e)}>
           <source src={video} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <img src={img}></img>

@@ -165,10 +165,11 @@ body{
 
 .page-wrap{
   padding-top: 50px;
-  min-height: 100vh;
+  min-height: 82vh;
 
   @media (min-width: 768px){
     padding-top: 64px;
+    min-height: 100vh;
   }
 
   @media (min-width: 1024px){

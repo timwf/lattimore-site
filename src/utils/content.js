@@ -74,3 +74,189 @@ export const accordionData = [
     ]
   },
 ];
+
+
+
+export const projectListItems = [
+  {
+    client: 'Client Name One',
+    project: `Project Name and link`,
+    img: `../images/home-hero.png`
+  },
+  {
+    client: 'Client Name Two',
+    project: `Project Name Two and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Three',
+    project: `Project Name Three and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Four Really Long Title',
+    project: `Project Name four and link long project name`,
+    img: ``
+  },
+  {
+    client: 'Client Name Five',
+    project: `Project Name five and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Six',
+    project: `Project Name six and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Seven',
+    project: `Project Name seven and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Eight',
+    project: `Project Name eight and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Nine',
+    project: `Project Name nine and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Ten',
+    project: `Project Name ten and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Eleven',
+    project: `Project Name eleven and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Twelve',
+    project: `Project Name Twelve and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name One',
+    project: `Project Name and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Two',
+    project: `Project Name Two and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Three',
+    project: `Project Name Three and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Four',
+    project: `Project Name four and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Five',
+    project: `Project Name five and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Six',
+    project: `Project Name six and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Seven',
+    project: `Project Name seven and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Eight',
+    project: `Project Name eight and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Nine',
+    project: `Project Name nine and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Ten',
+    project: `Project Name ten and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Eleven',
+    project: `Project Name eleven and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Twelve',
+    project: `Project Name Twelve and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name One',
+    project: `Project Name and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Two',
+    project: `Project Name Two and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Three',
+    project: `Project Name Three and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Four',
+    project: `Project Name four and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Five',
+    project: `Project Name five and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Six',
+    project: `Project Name six and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Seven',
+    project: `Project Name seven and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Eight',
+    project: `Project Name eight and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Nine',
+    project: `Project Name nine and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Ten',
+    project: `Project Name ten and link`,
+    img: `gg`
+  },
+  {
+    client: 'Client Name Eleven',
+    project: `Project Name eleven and link`,
+    img: ``
+  },
+  {
+    client: 'Client Name Twelve',
+    project: `Project Name Twelve and link`,
+    img: `gg`
+  },
+
+];
