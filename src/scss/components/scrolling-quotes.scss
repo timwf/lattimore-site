@@ -196,6 +196,10 @@
       transition-timing-function: linear !important;
 
       @media (min-width: 768px){
+        font-size: 40px;
+      }
+
+      @media (min-width: 1024px){
         font-size: 70px;
       }
     }

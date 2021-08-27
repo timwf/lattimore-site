@@ -3,18 +3,22 @@
   &__slide{    
     height: 49.5vw;
     width: 100%;
-    border: solid black;
+    border: solid #2A2A2A;
     border-width: 1px;
 
     @media (min-width: 768px){
-      height: 21.5vw;
+      height: 23.5vw;
       border-width: 2px;
+    }
+
+    @media (min-width: 1180px){
+      height: 21.5vw;
     }
   }
 
   &__slide-header{
     height: 18px;
-    border-bottom: solid black;
+    border-bottom: solid #2A2A2A;
     border-width: 1px;
     display: flex;
     position: relative;
@@ -31,7 +35,7 @@
     width: 6px;
     margin-left: 2px;
     border-radius: 50%;
-    border: solid black;
+    border: solid #2A2A2A;
     border-width: 1px;
 
     @media (min-width: 1024px){
@@ -91,7 +95,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #2a2a2a57;
+    background-color: #2a2a2acc;
+
     z-index: 9;
     display: none;
     padding: 108px 20px 154px;
@@ -113,7 +118,7 @@
 
       @media (min-width: 768px){
         height: 100%;
-        border: solid black;
+        border: solid #2A2A2A;
         background-color: white;
       }
 
@@ -140,7 +145,7 @@
 
     .carousel__slide-header{
       height: 18px;
-      border-bottom: solid black;
+      border-bottom: solid #2A2A2A;
       border-width: 1px;
       display: flex;
       position: relative;
@@ -160,7 +165,7 @@
       width: 6px;
       margin-left: 2px;
       border-radius: 50%;
-      border: solid black;
+      border: solid #2A2A2A;
       border-width: 1px;
   
       @media (min-width: 1024px){
@@ -229,6 +234,15 @@
 
     @media (min-width: 768px){
       margin-top: 33px;
+    }
+ 
+    p{
+      font-size: 14px;
+      color: #f1f1f1;
+
+      @media (min-width: 768px){
+         font-size: 18px;
+      }
     }
 
     a{

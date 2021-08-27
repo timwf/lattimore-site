@@ -11,11 +11,18 @@
 
   &__heading{
     .header-std{
-      max-width: 70%;
+      max-width: 99%;
       margin-top: 77px;
+      font-size: 19px;
+
+      @media (min-width: 768px){
+        max-width: 99%;
+        font-size: 40px;
+      }
 
       @media (min-width: 1180px){
         max-width: 77%;
+        font-size: 50px;
       }
   
       svg{
@@ -26,8 +33,9 @@
         top: 2px;
         position: relative;
 
-        @media (min-width: 1024px){
-
+        @media (min-width: 768px){
+          width: 25px;
+          height: 26px;
         }   
     
         @media (min-width: 1180px){
@@ -101,7 +109,17 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
+
+      @media (min-width: 768px){
+        font-size: 15px;
+      }
+
+      @media (min-width: 1024px){
+        font-size: 16px;
+      }
     }
+
+
 
     img{
       position: absolute;

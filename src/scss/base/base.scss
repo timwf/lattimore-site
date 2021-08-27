@@ -1,3 +1,11 @@
+
+/* vars */
+
+$body-text: #2A2A2A;
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,17 +34,21 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -45,7 +57,7 @@ table {
 a{
   cursor: none !important; 
   text-decoration: none;
-  color: black;
+  color: $body-text;
 }
 
 
@@ -64,7 +76,7 @@ a{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #2A2A2A;
 }
 
 /* Handle on hover */
@@ -79,6 +91,7 @@ body{
   overflow-x: hidden;
   cursor: none !important;
   background-color: #F1F1F1;
+  color: $body-text;
 }
 
 .tl-edges{
@@ -144,7 +157,7 @@ body{
   &.active{
     display: block;
     padding: 6px 11px;
-    background-color: #2A2A2A;
+    background-color: $body-text;
   }
 }
 
@@ -224,6 +237,7 @@ body{
   font-size: 18px;  
   line-height: 22px;
   text-transform: uppercase;
+  font-weight: 500;
 
   @media (min-width: 768px){
     font-size: 22px;  
@@ -236,10 +250,11 @@ body{
   font-size: 17px;  
   line-height: 21px;
   text-transform: uppercase;
+  font-weight: 500;
 
   @media (min-width: 768px){
-    font-size: 18px;  
-    line-height: 22px; 
+    font-size: 20px;  
+    line-height: 24px; 
   }
 }
 

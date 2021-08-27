@@ -16,6 +16,7 @@
     font-size: 19px;
     margin-top: 15px;
     font-family: 'gt-flexa-medium';
+    font-weight: 500;
 
     @media (min-width: 768px) and (min-height: 500px){
       display: none;
@@ -113,6 +114,7 @@
         position: absolute;
         font-size: 58px;
         display: block;
+        font-weight: 500;
       }
 
       &:nth-child(1){
@@ -157,7 +159,7 @@
 
   &__web-agency{
     left: -157px;
-
+    font-size: 40px !important;
     bottom: 170px;
     transform: rotate(-90deg);
     width: 400px;

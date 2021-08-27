@@ -35,10 +35,13 @@ const Carousel = ({ reverse, navClass, slideClicked, handleSlideClicked }) => {
       console.log('smaller');
       setNumSlides(1.15)
       setSpaceBetween(20) 
+    }else if (window.innerWidth > 767 && window.innerWidth < 1180){
+      setNumSlides(2.4)
+      setSpaceBetween(16) 
     }else{
       setNumSlides(2.7)
       setSpaceBetween(27) 
-    } 
+    }
 
   }, []);
 
