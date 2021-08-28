@@ -12,18 +12,19 @@ import imgThree from "../images/slide-4.png"
 import imgFour from "../images/slide-5.png"
 import Slide from "../components/slide"
 import {handleMouseHoverRight, handleMouseHoverExit, handleMouseHoverLeft } from '../utils/helpers.js'
+
 SwiperCore.use([Autoplay, Navigation]);
+
 
 const Carousel = ({ reverse, navClass, slideClicked, handleSlideClicked }) => {
   const [numSlides, setNumSlides] = useState(2.7)
   const [spaceBetween, setSpaceBetween] = useState(27)
   let right = "." + navClass + "-right"
   let left = "." + navClass + "-left"
-  const isSSR = typeof window !== "undefined";
-
 
   function initCarousel(){
     if (window.innerWidth < 768) {
+      console.log('smaller');
       setNumSlides(1.15)
       setSpaceBetween(20) 
     }else if (window.innerWidth > 767 && window.innerWidth < 1180){
@@ -35,13 +36,19 @@ const Carousel = ({ reverse, navClass, slideClicked, handleSlideClicked }) => {
     }
   }
 
+
+  function reload(){
+    window.location.reload()
+  }
+
   useEffect(() => {
     initCarousel()
-    window.addEventListener("resize", initCarousel);
+    window.addEventListener("resize", reload);
     return () => {
-      window.removeEventListener("resize", initCarousel);
+      window.removeEventListener("resize", reload);
     };
-  }, [])
+  },[])
+
 
   return (
     <div className="carousel" >

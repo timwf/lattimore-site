@@ -4,18 +4,16 @@ import {handleMouseHoverRight, handleMouseHoverExit } from '../utils/helpers.js'
 import Plus from "../images/plus.svg"
 
 const ScrollingQuote = ({ title, quote, tape }) => {
-  const isSSR = typeof window !== "undefined";
-
 
   function initScroller() {
- 
-
     setTimeout(function(){ 
       let items = document.getElementsByClassName("scrolling-quotes__item");
       let windowWidth = window.innerWidth
       let itemsHidden = document.getElementsByClassName("scrolling-quotes__item-hidden");
 
+ 
       if (window.innerWidth < 1180) {
+
         for(var i = 0; i < items.length; i++){
           let scrollers = items[i].querySelectorAll(".js-scroller")[0]
           let text = scrollers.innerHTML
@@ -46,13 +44,17 @@ const ScrollingQuote = ({ title, quote, tape }) => {
      }, 500);  
   }
 
+  function reload(){
+    window.location.reload()
+  }
+
   useEffect(() => {
     initScroller()
-    window.addEventListener("resize", initScroller);
+    window.addEventListener("resize", reload);
     return () => {
-      window.removeEventListener("resize", initScroller);
+      window.removeEventListener("resize", reload);
     };
-  }, [])
+  },[])
 
 
   function showHidden(e){
