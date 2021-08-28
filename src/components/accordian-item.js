@@ -29,7 +29,6 @@ const AccordianItem = ({ title, tape, content, id }) => {
 
         if (window.innerWidth > 1024) {
           window.scroll({top: 0, left: 0, behavior: 'smooth'});
-          console.log('bigggger1');
         }     
    
       }  

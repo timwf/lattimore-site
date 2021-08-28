@@ -20,12 +20,12 @@ import { StaticImage } from "gatsby-plugin-image"
 const WhatWeveDone = ({ location }) => {
   const [slideClicked, setSlideClicked] = useState(demoTwo);
 
+
+
   useEffect(() => {    
     let cursor  = document.getElementsByClassName('mouse-cursor')  
-    console.log('check');
 
     for (var i = 0; i < document.getElementsByClassName('js-move-image').length ; i++) {
-      console.log('checking');
       cursor[0].append(document.getElementsByClassName('js-move-image')[i])              
     }  
   },[]);
