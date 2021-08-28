@@ -20,10 +20,7 @@ const Carousel = ({ reverse, navClass, slideClicked, handleSlideClicked }) => {
   let right = "." + navClass + "-right"
   let left = "." + navClass + "-left"
   const isSSR = typeof window !== "undefined";
-  const [windowSize, setWindowSize] = useState({
-    width: isSSR ? 1200 : window.innerWidth,
-    height: isSSR ? 800 : window.innerHeight,
-  });
+
 
   function initCarousel(){
     if (window.innerWidth < 768) {
