@@ -57,7 +57,11 @@ const Layout = ({ location="", title, children }) => {
   function openMenu(){
     var menu = document.getElementsByClassName('menu')  
     menu[0].classList.add('active')
-    disableScroll()
+    
+
+    if(window.innerWidth > 1024){
+      disableScroll()
+    }
   }
 
 

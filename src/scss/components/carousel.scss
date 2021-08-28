@@ -6,6 +6,7 @@
     border: solid #2A2A2A;
     border-width: 1px;
 
+
     @media (min-width: 768px){
       height: 23.5vw;
       border-width: 2px;
@@ -39,10 +40,10 @@
     border-width: 1px;
 
     @media (min-width: 1024px){
-      height: 14px;
-      width: 14px;
+      height: 9px;
+      width: 9px;
       margin-left: 5px;
-      border-width: 2px;
+      border-width: 1px;
     }
 
     &:first-of-type{
@@ -50,12 +51,12 @@
       margin-left: 8px;
 
       @media (min-width: 768px){
-        margin-left: 20px;
+        margin-left: 12px;
       }
     }
 
     &:last-of-type{
-      background-color:#22D33C;
+      background-color:#24D43D;
     }
   }
 
@@ -115,8 +116,9 @@
       border: none;
       width: fit-content;
       position: relative;
+      max-height: 58vh;
 
-      @media (min-width: 768px){
+      @media (min-width: 768px) and (min-height: 500px){
         height: 100%;
         border: solid #2A2A2A;
         background-color: white;
@@ -125,12 +127,14 @@
       & video{
         width: calc(100% );
         position: relative;
-        height: auto;
+        height: auto;    
+        max-height: 58vh;
 
         @media (min-width: 768px){
           width: calc(100% - 0.5px);
           position: relative;
           height: 100%;
+          max-height: none;
         }
       }
     }
@@ -151,7 +155,7 @@
       position: relative;
       align-items: center;  
       
-      @media (min-width: 768px){
+      @media (min-width: 768px) and (min-height: 500px){
         height: 57px;
         border-width: 2px;
       }
